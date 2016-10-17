@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_tela_inicial"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:backgroundTint="#330000"
+    android:background="#330000"
+    tools:context="com.example.usurio.qualitylife2.TelaInicial"
+    tools:background="#330000">
+
+    <Button
+        android:text="CALORIAS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button_imc"
+        android:layout_alignEnd="@+id/button_imc"
+        android:layout_marginTop="47dp"
+        android:id="@+id/button_calorias"
+        android:visibility="visible"
+        android:onClick="calorias" />
+
+    <Button
+        android:text="IMC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="54dp"
+        android:id="@+id/button_imc"
+        android:visibility="visible"
+        android:onClick="imc"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:text="Fechar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="41dp"
+        android:id="@+id/buttonFechar"
+        android:layout_below="@+id/button_calorias"
+        android:layout_alignEnd="@+id/button_calorias"
+        android:onClick="fechar" />
+
+</RelativeLayout>
