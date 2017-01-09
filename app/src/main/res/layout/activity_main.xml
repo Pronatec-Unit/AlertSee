@@ -48,8 +48,11 @@
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/editPeso"
-            android:inputType="none" />
+            android:id="@+id/EditPeso"
+            android:inputType="numberDecimal"
+            android:textColor="#D2691E"
+            android:textStyle="bold"
+            android:layout_gravity="center_horizontal"/>
 
         <TextView
             android:layout_width="wrap_content"
@@ -62,8 +65,11 @@
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/editAltura"
-            android:inputType="none" />
+            android:id="@+id/EditAltura"
+            android:inputType="numberDecimal"
+            android:textColor="#D2691E"
+            android:textStyle="bold"
+            android:layout_gravity="center_horizontal"/>
 
         <FrameLayout
             android:layout_width="match_parent"
@@ -71,19 +77,20 @@
             android:layout_weight="0.15"/>
 
         <Button
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/calcular"
             android:id="@+id/botaoCalcular"
             android:layout_gravity="center_horizontal"
             android:background="#e8e2cc"
             android:textColor="#767676"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            android:onClick="botaoCalcular" />
 
         <FrameLayout
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_weight="0.15"></FrameLayout>
+            android:layout_weight="0.25"/>
 
         <TextView
             android:layout_width="wrap_content"
@@ -98,7 +105,7 @@
         <FrameLayout
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_weight="0.10"></FrameLayout>
+            android:layout_weight="0.10"/>
 
         <TextView
             android:layout_width="wrap_content"
@@ -109,6 +116,22 @@
             android:textSize="10pt"
             android:textColor="#e8e8e8"
             android:textStyle="bold" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.20"/>
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Sair"
+            android:id="@+id/botaoSair"
+            android:layout_gravity="center_horizontal"
+            android:background="#e8e2cc"
+            android:textColor="#767676"
+            android:onClick="botaoSair" />
 
     </LinearLayout>
 </RelativeLayout>

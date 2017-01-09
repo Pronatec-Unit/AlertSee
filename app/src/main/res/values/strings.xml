@@ -1,7 +1,9 @@
 <resources>
-    <string name="app_name"> Felicidade é Boa Saúde!</string>
+    <string name="app_name"> CALCULO DE IMC</string>
     <string name="calcular">CALCULAR</string>
     <string name="informe_a_altura">Informe a Altura:</string>
     <string name="informe_o_peso">Informe o Peso:</string>
     <string name="quality_life">QUALITY LIFE</string>
+    <string name="sair">SAIR</string>
+    <string name="Sair">SAIR</string>
 </resources>
